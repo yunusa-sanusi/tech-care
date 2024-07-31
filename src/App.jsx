@@ -1,8 +1,9 @@
+import Navbar from './components/navigation/Navbar';
+
 function App() {
   return (
     <>
-      <h1 className="text-2xl">
-        Tech Care</h1>
+      <Navbar />
     </>
   );
 }
