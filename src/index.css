@@ -32,3 +32,26 @@
   font-weight: 800;
   font-style: normal;
 }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  top: 215px;
+  left: 375px;
+  width: 6px;
+  height: 941px;
+  /* UI Properties */
+  background: #e3e4e6 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  opacity: 1;
+}
+
+::-webkit-scrollbar-thumb {
+  top: 215px;
+  left: 375px;
+  width: 6px;
+  height: 100px;
+  /* UI Properties */
+  background: #072635 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  opacity: 1;
+}
