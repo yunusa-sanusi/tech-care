@@ -1,9 +1,8 @@
 import Patient from './Patient';
 
 import searchIcon from 'assets/svg/search.svg';
-import image from 'assets/png/Layer 8.png';
 
-const PatientList = () => {
+const PatientList = ({ patients }) => {
   return (
     <section className="w-full h-auto bg-primary rounded-xl col-span-1 relative py-4 pr-1">
       <div className="flex justify-between items-center px-4">
@@ -12,9 +11,17 @@ const PatientList = () => {
       </div>
 
       <div className="mt-4 overflow-y-auto">
-        <Patient patientName={'John Doe'} patientImage={image} />
-        <Patient patientName={'Emily Williams'} patientImage={image} />
-        <Patient patientName={'Jane Doe'} patientImage={image} />
+        {patients.map((patient) => {
+          return (
+            <Patient
+              key={patient.phone_number}
+              patientName={patient.name}
+              patientImage={patient.profile_picture}
+              patientGender={patient.gender}
+              patientAge={patient.age}
+            />
+          );
+        })}
       </div>
     </section>
   );

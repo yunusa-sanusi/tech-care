@@ -16,8 +16,8 @@ export default {
         chartLine1: '#C26EB4',
         chartLine2: '#7E6CAB',
         chartPt1: '#E66FD2',
-        chartPt2: '#E66FD2',
-        chartStrip: '#CBC8D4',
+        chartPt2: '#8C6FE6',
+        chartGrid: '#CBC8D4',
         scroll: '#E3E4E6',
       },
       textColor: {
