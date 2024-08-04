@@ -14,9 +14,7 @@ const DiagnosisSection = ({ patientData }) => {
 
       <div className="bg-primary rounded-xl p-4 mt-8">
         <h2 className="font-extrabold text-xl pb-6">Diagnostic List</h2>
-        <div>
-          <DiagnosticList diagnosis={patientData.diagnostic_list} />
-        </div>
+        <div>{<DiagnosticList diagnosis={patientData.diagnostic_list} />}</div>
       </div>
     </section>
   );
