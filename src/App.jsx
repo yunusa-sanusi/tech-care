@@ -39,7 +39,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <main className="xl:w-[97%] min-[1600px]:w-[1564px] h-[72px] mx-auto px-1 grid grid-cols-4 gap-x-5">
+      <main className="xl:w-[97%] min-[1600px]:w-[1564px] mx-auto px-1 grid grid-cols-4 gap-x-5">
         <PatientList patients={patients} />
         <DiagnosisSection patientData={jessicaData} />
         <PatientDataSection patientData={jessicaData} />

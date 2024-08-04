@@ -10,7 +10,7 @@ const PatientList = ({ patients }) => {
         <img src={searchIcon} alt="search icon" className="w-[18px] h-[18px]" />
       </div>
 
-      <div className="mt-4 overflow-y-auto">
+      <div className="mt-4 h-[950px] overflow-y-auto">
         {patients.map((patient) => {
           return (
             <Patient
